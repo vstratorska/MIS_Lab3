@@ -19,7 +19,7 @@ class _JokeTypeGridState extends State<JokeTypeGrid> {
         crossAxisSpacing: 4,
         mainAxisSpacing: 4,
         semanticChildCount: 250,
-        childAspectRatio: 200/ 290,
+        childAspectRatio: 200/ 250,
         shrinkWrap: true,
         children: widget.joketypes.map((joketype) => JokeTypeCard(
           id: joketype.id, type: joketype.type,

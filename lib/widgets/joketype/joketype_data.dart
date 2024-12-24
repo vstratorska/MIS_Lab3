@@ -12,7 +12,7 @@ class JokeTypeCardData extends StatelessWidget {
 
     return Column(mainAxisSize: MainAxisSize.min,
       children: [
-        Container( margin: const EdgeInsets.only(top: 125),
+        Container( margin: const EdgeInsets.only(top: 100),
         child: Text(type, style: const TextStyle(
             color: Colors.black54, fontSize: 20, fontWeight: FontWeight.w600,
         ),),)

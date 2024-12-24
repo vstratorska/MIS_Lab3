@@ -18,22 +18,30 @@ class JType {
   );
 }
 
+
+
  class Joke {
+  final String type;
   final String setup;
   final String punchline;
   final int id;
+  bool isFavorite = false;
+
 
   Joke({
+    this.type = '',
     this.setup = '',
     this.punchline = '',
     this.id = 0
   });
 
   factory Joke.fromJson(Map<String, dynamic> json) => Joke(
+    type: json["type"] ?? '',
     setup: json["setup"] ?? '',
     punchline: json["punchline"] ?? '',
     id: json["id"] ?? 1,
   );
 
 }
+
 

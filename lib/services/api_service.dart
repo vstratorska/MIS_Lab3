@@ -26,6 +26,8 @@ class ApiService {
     }
   }
 
+
+
   static Future<dynamic> getJokeOfTheDayAPI() async {
     final response = await http.get(
         Uri.parse("https://official-joke-api.appspot.com/random_joke"));
